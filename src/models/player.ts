@@ -1,0 +1,1 @@
+import { PlayerStatus } from '../constants/player'; import type { Cell } from './cell'; export interface Player { id:string; nickname:string; color:string; score:number; status:PlayerStatus; position:{x:number;y:number}; trail:Cell[]; territory:Cell[] }

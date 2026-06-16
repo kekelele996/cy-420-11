@@ -1,0 +1,1 @@
+<template><section class="panel"><h3>实时排行榜</h3><p v-for="row in rows" :key="row.player_id">{{ row.player_id }} · {{ scoreText(row.score) }}</p></section></template><script setup lang="ts">import { scoreText } from '../../utils/formatters'; defineProps<{rows:{player_id:string;score:number}[]}>();</script>

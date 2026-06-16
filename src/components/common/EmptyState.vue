@@ -1,0 +1,1 @@
+<template><div class="panel empty"><strong>{{ title }}</strong><p>{{ description }}</p></div></template><script setup lang="ts">defineProps<{title:string;description?:string}>();</script><style scoped>.empty{text-align:center}</style>

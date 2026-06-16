@@ -1,0 +1,1 @@
+import { websocketService } from '../services/websocketService'; import { WsMessageType } from '../constants/websocket'; import { retryConnect } from '../utils/reconnectManager'; export function useWebSocket(){ return { service:websocketService, refresh:()=>websocketService.send(WsMessageType.ROOM_LIST,{}), retry:retryConnect }; }

@@ -1,0 +1,1 @@
+export enum WsMessageType { CONNECT='connect', ROOM_LIST='room_list', JOIN_ROOM='join_room', PLAYER_MOVE='player_move', GAME_TICK='game_tick', TERRITORY_CAPTURE='territory_capture', PLAYER_KILL='player_kill', RECONNECT='reconnect' }

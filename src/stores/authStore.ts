@@ -1,0 +1,1 @@
+import { defineStore } from 'pinia'; import { logGame } from '../utils/gameLogger'; export const useAuthStore=defineStore('auth',{state:()=>({nickname:localStorage.getItem('territoryrush:nickname')||'Rush 玩家'}),actions:{setNickname(nickname:string){this.nickname=nickname;localStorage.setItem('territoryrush:nickname',nickname);logGame('STORAGE_WRITE',{key:'nickname'});}}});

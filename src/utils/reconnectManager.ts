@@ -1,0 +1,1 @@
+import { messages } from '../constants/messages'; import { logGame } from './gameLogger'; export function retryConnect(count:number){ logGame('RECONNECT',{count}); return count < 5 ? messages.disconnected : '请刷新页面'; }

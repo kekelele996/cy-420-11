@@ -1,0 +1,1 @@
+@tailwind base; @tailwind components; @tailwind utilities; body{margin:0;background:#f7fbff;color:#152331;font-family:"Gill Sans","PingFang SC",sans-serif;} .page{padding:24px clamp(14px,4vw,52px);} .panel{border:1px solid #b8d7e8;background:white;border-radius:8px;padding:16px;} .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
